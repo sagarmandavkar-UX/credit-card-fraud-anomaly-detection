@@ -1,0 +1,24 @@
+{
+  "rows": 284807,
+  "frauds": 492,
+  "fraud_rate": 0.001727485630620034,
+  "split": {
+    "train_rows": 170884,
+    "validation_rows": 56961,
+    "test_rows": 56962
+  },
+  "training_strategy": "Models fit only on known-normal transactions from the earliest 60% of time-ordered data.",
+  "alert_rate_target": 0.005,
+  "selected_model": "Local Outlier Factor",
+  "selection_metric": "validation PR-AUC",
+  "test_pr_auc": 0.17562274252367607,
+  "test_roc_auc": 0.9128208553799638,
+  "test_alerts": 170,
+  "test_actual_alert_rate": 0.002984445770864787,
+  "test_frauds": 75,
+  "test_frauds_captured": 39,
+  "test_precision_at_alert_rate": 0.22941176470588234,
+  "test_recall_at_alert_rate": 0.52,
+  "test_false_positives": 131,
+  "caveat": "This anonymized two-day 2013 sample is a methods benchmark, not production fraud evidence."
+}
